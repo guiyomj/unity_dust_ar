@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+
+<!-- ARMedia 3D Tracker Configuration (for details refer to the online documentation available at http:\\www.xyz.com\sdk\3dtracker\configuration.php) -->
+<opencv_storage>
+
+<!-- pointcloud_filename: the file name of the pointcloud data generated for the object to track. -->
+<pointcloud_filename>pointcloud.ply</pointcloud_filename>
+
+<!-- pointcloud_checksum: the integrity checksum used to verify that the pointcloud data is not corrupted. -->
+<pointcloud_checksum>"F279D24B6651CD21FAF609009D929BC03DAE7C4E"</pointcloud_checksum>
+
+<!-- max_number_of_pointcloud_keyframes: the maximum number of keyframes that will be used to init the tracker. -->
+<max_number_of_pointcloud_keyframes>0</max_number_of_pointcloud_keyframes>
+
+<!-- features_detector: the OpenCV features detector to be used. -->
+<features_detector>ORB-650</features_detector>
+
+<!-- features_extractor: the OpenCV features extractor to be used. -->
+<features_extractor>BRIEF</features_extractor>
+
+<!-- max_number_of_features_for_initialization: the maximum number of features that are used to start tracking (i.e. to initialize). -->
+<max_number_of_features_for_initialization>80</max_number_of_features_for_initialization>
+
+<!-- max_number_of_features_neighbours_for_initialization: the number of nearest neighbours that are searched for each feature. -->
+<max_number_of_features_neighbours_for_initialization>1</max_number_of_features_neighbours_for_initialization>
+
+<!-- max_number_of_keyframes_for_initialization: the maximum number of matching keyframes that will be used to estimate the initial pose (i.e. to initialize). -->
+<max_number_of_keyframes_for_initialization>5</max_number_of_keyframes_for_initialization>
+
+<!-- number_of_pose_refinement_iterations: the number of iterations used to refine or update the estimated pose. -->
+<number_of_pose_refinement_iterations>10</number_of_pose_refinement_iterations>
+
+<!-- features_search_resolution: the resolution of image patches (size of search window) used by the tracker. -->
+<features_search_resolution>23</features_search_resolution>
+
+<!-- features_search_levels: the (0-based) number of pyramid levels used by the tracker. -->
+<features_search_levels>3</features_search_levels>
+
+<!-- features_search_iter: the maximum number of iterations used by the tracker. -->
+<features_search_iter>10</features_search_iter>
+
+<!-- min_distance_to_add_features: the minimum (pixel) distance among features required to add a new feature to track. -->
+<min_distance_to_add_features>12</min_distance_to_add_features>
+
+<!-- min_number_of_longtime_features: the minimum number of 'longtime' features that are required to keep tracking. -->
+<min_number_of_longtime_features>12</min_number_of_longtime_features>
+
+<!-- max_features: the maximum number of features to track. -->
+<max_number_of_features_to_track>50</max_number_of_features_to_track>
+
+<!-- debug_mode: will allow you to see all tracked features and/or a reference rectangle (specified below). -->
+<debug_mode>0</debug_mode>
+
+<!-- reference_rectangle: a reference rectangle specified by its 3D coordinates. -->
+<reference_rectangle>
+    0.0 0.0 0.0 
+    1.0 0.0 0.0
+    1.0 1.0 0.0
+    0.0 1.0 0.0
+</reference_rectangle>
+
+<!-- cache_write: enables/disables the creation of a cache meant to be deployed instead of the whole keyframes set. -->
+<cache_write>1</cache_write>
+
+<!-- cache_read: enables/disables the reading of information from a cache. -->
+<cache_read>1</cache_read>
+
+</opencv_storage>

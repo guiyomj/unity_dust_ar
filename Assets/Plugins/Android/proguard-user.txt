@@ -1,0 +1,17 @@
+-keep class com.google.unity.** {
+   *;
+}
+-keep public class com.google.android.gms.ads.**{
+   public *;
+}
+-keep public class com.google.ads.**{
+   public *;
+}
+-keep public class com.inglobetechnologies.ARMediaSDKUnityExample.**{
+   public *;
+}
+-keep public class com.example.plugin.**{
+   public *;
+}
+-keepattributes *Annotation*
+-dontobfuscate
